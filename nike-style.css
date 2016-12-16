@@ -2,7 +2,6 @@ body {
     margin: 0; 
     padding: 0; 
     border: #c8cfdc solid 50px; 
-    @f
 }
 
 header{
@@ -17,6 +16,22 @@ header{
 @fontface{
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+h2 {
+    font-size: 17px; 
+    font-weight: bold; 
+    
+    font-family: 'Roboto Condensed'; 
+}
+
+
+h1 {
+    font-size: 24px; 
+    font-weight: bold; 
+    
+    font-family: 'Roboto Condensed'; 
+}
+
 
 /*header*/
 
@@ -38,7 +53,7 @@ header{
     
     font-size: 10px;
     font-weight: bold;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed';
     
     margin-top: 40px; 
     margin-bottom: 40px; 
@@ -114,7 +129,30 @@ header{
 #choose1 {
     margin-top: 5.8%; 
     margin-left: 8.8%;
+    width: 635px; 
     
 }
+
+#article{
+    width: 260px; 
+    height: 405px;
+    
+    float: right; 
+    
+    margin-right: 130px; 
+}
+
+#heart {
+    padding: 17px; 
+    border: solid 1px #e4e4e4; 
+    
+    margin-bottom: 1.6%; 
+}
+
+#brand {
+    margin-bottom: 0.6%;  
+}
+
+
 
 
