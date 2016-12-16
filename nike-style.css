@@ -63,6 +63,8 @@ header{
     list-style: none;
     float: right; 
     margin: 0; 
+    
+    position: relative; 
 }
 
 #menu-right li {
@@ -76,13 +78,12 @@ header{
     margin-bottom: 40px; 
     
     padding-right: 40px;
-    
-    height: 16px;
 }
 
 #menu-right li a {
     text-decoration: none;
-    color: black;    
+    color: black;   
+    margin-left: 30px; 
 }
 
 #menu-right li a:hover {
@@ -91,7 +92,10 @@ header{
 }
 
 .item{
-    top: 5px;
+    top: 38px;
+    position: absolute; 
+    
+    margin-right: 40px; 
 }
 
 #number-cart{
@@ -105,6 +109,12 @@ header{
     height: 610px; 
     
     background-color: white; 
+}
+
+#choose1 {
+    margin-top: 5.8%; 
+    margin-left: 8.8%;
+    
 }
 
 
