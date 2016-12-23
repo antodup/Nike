@@ -14,6 +14,10 @@
     
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     
+    <link rel="stylesheet" href="Swiper/dist/css/swiper.min.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    
     
 </head>
 
@@ -148,7 +152,7 @@
         <div id="article2">
         
             <h2>NIKE</h2>
-            <p>Air Max Davas SD</p>
+            <p>Air Max Tavas SD</p>
             <p class="color"><span>BLACK/PINK POW/TOUR YELLOW/WHITE</span></p>
             
             <img src="PICTURES/top-background-1.png" alt="nike" id="choose-nike2">
@@ -191,9 +195,46 @@
 <!--FOOTER-->
     
     <div id="footer">
-    
-    </div>
+        
+        <div id="footer-content">
+            <p class="little-title">SOCIAL</p>
+            <h2>#NIKEAIRMAX</h2>
+            
+            <div class="swiper-container">
+            
+                <div class="swiper-wrapper">
 
+                    <div class="swiper-slide"><img src="PICTURES/choose1.png" alt="choose 1"></div>
+                    <div class="swiper-slide"><img src="PICTURES/choose2.png" alt="choose 2"></div>
+                    <div class="swiper-slide"><img src="PICTURES/choose3.png" alt="choose 3"></div>
+                    <div class="swiper-slide"><img src="PICTURES/choose4.png" alt="choose 4"></div>
+                    <div class="swiper-slide"><img src="PICTURES/choose5.png" alt="choose 5"></div>
+                    <div class="swiper-slide"><img src="PICTURES/choose6.png" alt="choose 6"></div>
+                    <div class="swiper-slide"><img src="PICTURES/choose7.png" alt="choose 7"></div>
+                    <div class="swiper-slide"><img src="PICTURES/choose8.png" alt="choose 8"></div>
+
+                </div>
+                    <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            
+            </div>
+        </div>
+    
+        
+    </div>
+    
+        <script src="Swiper/dist/js/swiper.min.js"></script>
+
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                slidesPerView: 4,
+                paginationClickable: true,
+                spaceBetween: 30, 
+            });
+        </script>
+    
+    
     <script src="nike-javascript.js"></script>
 </body>
 
