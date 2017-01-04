@@ -1,3 +1,8 @@
+* {
+    margin: 0; 
+    padding: 0; 
+}
+
 @fontface{
     font-family: 'Roboto Condensed', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -5,12 +10,8 @@
 
 body {
     margin: 0; 
-    padding: 0; 
-    
-    border-top: #c8cfdc solid 50px; 
-    border-left: #c8cfdc solid 50px; 
-    border-right: #c8cfdc solid 50px; 
-    
+    padding: 50px;  
+    background-color: #c8cfdc;
 }
 
 header{
@@ -31,7 +32,7 @@ h3 {
     
     font-family: 'Roboto Condensed'; 
     margin: 0; 
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 
@@ -47,7 +48,9 @@ h1 {
     font-size: 24px; 
     font-weight: bold; 
     
-    font-family: 'Roboto Condensed'; 
+    font-family: 'Roboto Condensed';
+    
+    margin-bottom: 15px;
 }
 
 p{    
@@ -67,7 +70,7 @@ p{
 #menu{
     list-style: none;
     margin: 0;
-    margin-left: 79px;
+    margin-left: 110px;
     float: left;
 }
 
@@ -136,6 +139,34 @@ p{
     margin-right: 40px; 
 }
 
+#search{
+    background-image: url(PICTURES/search.png);
+    background-repeat: no-repeat;
+    
+    padding-left: 22px;
+    border: none; 
+    
+    font-family: 'Roboto Condensed'; 
+    font-weight: bold; 
+    font-size: 10px; 
+    
+    width: 65px; 
+    height: 16px; 
+}
+
+#search:focus{     
+    -webkit-animation: search 0.3s linear forwards;
+    -moz-animation: search 0.3s linear forwards;
+    animation: search 0.3s linear forwards;
+    
+    border: black solid 1px; 
+}
+
+@-webkit-keyframes search {
+    from{width: 65px;}
+    to {width: 150px;}
+}
+
 #number-cart{
     color: #0089cf;
 }
@@ -149,80 +180,97 @@ p{
     background-color: white; 
     
     position: relative;
+    display: inline-block; 
+    z-index: 90; 
     
-    z-index: 4; 
+    font-size: 0; 
+    
+    margin-top: -6px; 
 }
 
 #choose1 {
-    margin-top: 5.8%; 
-    margin-left: 8.8%;
-    width: 635px; 
-    margin-top: 110px;
+    width:70%; 
     
+    text-align: center; 
     z-index: 4; 
+    display: inline-block; 
     
 }
 
 #article{
-    width: 260px; 
+    width: 30%; 
     height: 405px;
+    display: inline-block; 
     
-    float: right; 
-    
-    margin-right: 130px; 
-    margin-top: 58px;
+    margin-top: 58px; 
 }
 
 #heart {
     padding: 17px; 
     border: solid 1px #e4e4e4; 
     
-    margin-bottom: 1.6%; 
+    margin-bottom: 43px; 
 }
 
 .little.choose{
     float: left; 
     width: 80px; 
-    margin-right: 10px; 
+    margin-right: 10px;
+    
+    margin-bottom: 20px;
+}
+
+#grey-choose{
+    padding-left: 14px; 
 }
 
     /*text-bloc1*/
 #brand {
-    margin-bottom: 0.6%;  
+    margin-bottom: 16px;  
 }
 
 .price {
     color: #666666; 
     font-family: 'Roboto Condensed';
     font-weight: bold;
+    
+    margin-bottom: 26px;
 }
 
 .color{
     color: #666666; 
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 10px; 
+    
+    margin-bottom: 15px; 
 }
 
 .color span{
     color: #0089cf;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 10px; 
+    font-size: 10px;
+    
+    margin-bottom: 15px; 
 }
 
 #size-text {
-    font-size: 9px; 
+    font-size: 10px; 
     color: #989898; 
     font-family: 'Roboto Condensed', sans-serif;
+    
+    margin-top: 20px; 
+    margin-bottom: 15px; 
 }
 
     /*SIZE*/
 
-.skin {
+select {
     width: 125px; 
     height: 50px; 
     
     background-color: white; 
-    border: solid 1px #e4e4e4 0px; 
+    border: solid 1px #e4e4e4; 
+    border-radius: 0; 
     float: left; 
     
     color: #666666;
@@ -285,6 +333,16 @@ p{
     line-height: 17px;
     font-weight: lighter;
 }
+
+#brand2{
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+#model{
+    margin-bottom: 21px;    
+}
+
 
 /*BLOC 3*/
 
@@ -356,7 +414,6 @@ p{
 
 #article2 p {
     margin-left: 19px; 
-    margin-bottom: 0; 
     margin-right: 15px; 
 }
 
@@ -365,7 +422,7 @@ p{
     height: 120px; 
     
     margin-left: 19px;
-    margin-top: 52px;
+    margin-top: 30px;
 }
 
 #button{
@@ -377,7 +434,7 @@ p{
 
 #price2{
     float: right; 
-    margin-top: 50px; 
+    margin-top: 42px;
 }
 
 #stock{
@@ -385,7 +442,7 @@ p{
     font-weight: bold; 
     font-size: 10px; 
     font-family: 'Roboto Condensed';
-    margin-top: 52px;
+    margin-top: 42px;
 }
 
 /*FOOTER*/

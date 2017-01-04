@@ -9,7 +9,6 @@
     
     <link rel="stylesheet" type="text/css" href="nike-anim.css">
     
-    
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -18,6 +17,10 @@
     
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     
+    <!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+    <script src="nike-javascript.js"></script>
     
 </head>
 
@@ -38,8 +41,10 @@
             <ul id="menu-right">
 
                 <li>
-                    <img src="PICTURES/search.png" alt="search" class="item">
-                    <a href="#">SEARCH</a>
+                    <!--<img src="PICTURES/search.png" alt="search" class="item">
+                    <a href="#">SEARCH</a>-->
+                    
+                    <input type="search" name="search" placeholder="SEARCH" id="search">
                 </li>
 
                 <li>
@@ -54,6 +59,7 @@
                 </li>
 
             </ul>
+            
         </nav>
         
     </header>
@@ -62,7 +68,9 @@
     
     <div id="product">
         
-        <img src="PICTURES/top-background-1.png" alt="choose 1" id="choose1">
+        <div id="choose1">
+            <img src="PICTURES/top-background-1.png" alt="choose nike" id="choosenike">
+        </div>
         
         <div id="article">
             <img src="PICTURES/heart-1.png" alt="heart" id="heart">
@@ -72,15 +80,16 @@
             <p class="price">$ 160</p>
             <p class="color">COLORS - <span>BLACK/PINK POW/TOUR YELLOW/WHITE</span></p>
             
-            <img src="PICTURES/little-choose1.png" alt="nike pink" class="little.choose">
-            <img src="PICTURES/little-choose2.png" alt="nike grey" class="little.choose">
+            <img src="PICTURES/little-choose1.png" alt="nike pink" class="little.choose" id="pink-choose">
+            
+            <img src="PICTURES/little-choose2.png" alt="nike grey" class="little.choose" id="grey-choose">
             
             <p id="size-text">Size charts</p>
             
         <div>
                     
             <span id="select-size" >
-                <select class="skin" data-nofirst="true">
+                <select class="skin" data-nofirst="true" required>
                         
                     <option value="1274689" data-disabled="false">SIZE</option>
                         
@@ -151,8 +160,8 @@
         
         <div id="article2">
         
-            <h2>NIKE</h2>
-            <p>Air Max Tavas SD</p>
+            <h2 id="brand2">NIKE</h2>
+            <p id="model">Air Max Tavas SD</p>
             <p class="color"><span>BLACK/PINK POW/TOUR YELLOW/WHITE</span></p>
             
             <img src="PICTURES/top-background-1.png" alt="nike" id="choose-nike2">
@@ -160,8 +169,7 @@
             <div id="button">
                     
                 <span id="select-size" >
-                    <select class="skin" data-nofirst="true">
-
+                    <select class="skin" data-nofirst="true" required>
                         <option value="1274689" data-disabled="false">SIZE</option>
 
                         <option value="1274689" data-disabled="false">39</option>
@@ -234,8 +242,6 @@
             });
         </script>
     
-    
-    <script src="nike-javascript.js"></script>
 </body>
 
 </html>
