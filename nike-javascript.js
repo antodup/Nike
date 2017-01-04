@@ -21,12 +21,16 @@ $(document).ready(function(){
     
     function change_choose1 (){
         $("#choosenike").attr('src', 'PICTURES/top-background-2.png');
+        
+        $("#choose-nike2").attr('src', 'PICTURES/top-background-2.png');
     }
     
     greychoose.addEventListener("click", change_choose1)
     
     function change_choose2 (){
         $("#choosenike").attr('src', 'PICTURES/top-background-1.png');
+        
+        $("#choose-nike2").attr('src', 'PICTURES/top-background-1.png');
     }
     
     pinkchoose.addEventListener("click", change_choose2)
