@@ -278,8 +278,21 @@ select {
     font-size: 10px; 
 }
 
+#add1 {
+    background-color: #333333; 
+    
+    width: 125px; 
+    height: 50px; 
+    
+    color: white; 
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none; 
+    font-size: 10px; 
+    
+    margin-left: 10px; 
+}
 
-#add {
+#add2 {
     background-color: #333333; 
     
     width: 125px; 
