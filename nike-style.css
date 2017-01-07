@@ -58,7 +58,6 @@ p{
     font-size: 13px;
 }
 
-
 /*header*/
 
 #logo{
@@ -96,8 +95,7 @@ p{
     text-decoration: none;
     color: #0089cf;
     border-bottom: 4px solid #0089cf; 
-    padding-bottom: 36px; 
-    
+    padding-bottom: 36px;   
 }
 
 #menu-right {
@@ -139,6 +137,7 @@ p{
     margin-right: 40px; 
 }
 
+    /*SEARCH*/
 #search{
     background-image: url(PICTURES/search.png);
     background-repeat: no-repeat;
@@ -157,18 +156,29 @@ p{
 #search:focus{     
     -webkit-animation: search 0.3s linear forwards;
     -moz-animation: search 0.3s linear forwards;
-    animation: search 0.3s linear forwards;
-    
-    border: black solid 1px; 
+    animation: search 0.3s linear forwards; 
 }
 
 @-webkit-keyframes search {
     from{width: 65px;}
     to {width: 150px;}
+};
+
+ 
+#search:-moz-placeholder, textarea:-moz-placeholder {
+    color: #000000;
+}
+ 
+#search::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #000000;
+}
+ 
+#search.placeholder, textarea.placeholder {
+    color: #000000;
 }
 
 #number-cart{
-    color: #0089cf;
+    color: #000000;
 }
 
 /*BLOC 1*/
@@ -309,6 +319,8 @@ select {
 #BLOC{
     height: 1320px;
     width: 100%;
+    
+    position: relative; 
 }
 
 /*BLOC 2*/
@@ -412,9 +424,9 @@ select {
     
     background-color: white;
     
-    position: fixed;
+    position: absolute;
     top: 118px; 
-    right: 95px; 
+    right: 30px; 
     
     float: right; 
     
